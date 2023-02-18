@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';//for this on left side down>>Dependencies>>Enter package name>>write there>>npm install prop-types>>press enter key
 
 export default class UserComponent extends React.Component{
   render(){
@@ -16,10 +16,10 @@ export default class UserComponent extends React.Component{
   }
 }
 
-UserComponent.PropTypes={
-  name:PropTypes.string.isRequired,
-  projects:PropTypes.array,
-  age(props,propName){
+UserComponent.propTypes={   //PropTypes is an object of UserComponent.
+  name:PropTypes.string.isRequired,    //name should be string
+  projects:PropTypes.array,      //projects should be of type array      
+  age(props,propName){        //for project we had write our custom validation
     if(typeof props[propName]!=='number'){
       return new Error('Age must be a number');
      }
@@ -28,9 +28,9 @@ UserComponent.PropTypes={
        );
      }
 
-  },
+  },//age ends here
 };
 
-UserComponent.defaultProps={
-  name:'Vinay',
+UserComponent.defaultProps={       //defaultsProps is an object of UserComponent.
+  name:'Vinay',  //when you are not passing any vale of name inside App.js then it would take bydefault value of name from here
 };
