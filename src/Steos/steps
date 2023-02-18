@@ -1,0 +1,9 @@
+Prop Types
+..............
+To ensure that the react component received the components in proper format and also the appropriate value,React provides way to validate the properties
+
+steps to install prop-types dependencies 
+.......................................
+step1>>inside StackBlitz >>on left side down>>Dependencies>>Enter package name>>write there>>npm install prop-types>>press enter key
+.........................
+

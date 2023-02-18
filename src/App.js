@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css";
+import UserComponent from './UserComponent';
 
-export default function App() {
-  return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+export default class App extends React.Component {
+  render (){
+    return(
+      <UserComponent name={"Ram"} projects={
+        ["ShoppingCart"]} age={101}></UserComponent>
   );
+}
 }
