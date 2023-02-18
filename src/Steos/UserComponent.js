@@ -30,8 +30,7 @@ UserComponent.PropTypes={
 
   },
 };
-/*
+
 UserComponent.defaultProps={
   name:'Vinay',
 };
-*/

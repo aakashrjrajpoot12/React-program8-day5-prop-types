@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.css";
-import UserComponent from './UserComponent';
+import UserComponent from './userComponent';
 
 export default class App extends React.Component {
   render (){
     return(
       <UserComponent name={"Ram"} projects={
-        ["ShoppingCart"]} age={101}></UserComponent>
+        ["ShoppingCart"]} age={101}>
+       </UserComponent>
   );
 }
 }
