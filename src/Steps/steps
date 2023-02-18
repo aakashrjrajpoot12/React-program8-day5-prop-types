@@ -1,6 +1,7 @@
 Prop Types
 ..............
-To ensure that the react component received the components in proper format and also the appropriate value,React provides way to validate the properties
+*Props are immutable
+*To ensure that the react component received the components in proper format and also the appropriate value,React provides way to validate the properties
 
 steps to install prop-types dependencies 
 .......................................
